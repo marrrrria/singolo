@@ -11,6 +11,15 @@
   font-family: "Lato";
   src: url(assets/fonts/Lato-Light.ttf);
 }
+@font-face {
+  font-family: "Lato-B";
+  src: url(assets/fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato-R";
+  src: url(assets/fonts/Lato-Regular.ttf);
+}
+
 a {
   text-decoration: none;
 }
@@ -177,4 +186,69 @@ a {
 .services {
   background-color: #f2f2f2;
   margin-top: 7px;
+  padding-top: 75px;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 73px;
+  box-shadow: 0 7px 0 0 #ffffff;
+}
+.services h1 {
+  font-size: 32px;
+  line-height: 18px;
+  color: #666d89;
+  font-weight: 950;
+  font-family: "Lato-R", sans-serif;
+  /* margin-bottom: 35px; */
+}
+.services--description {
+  font-size: 19px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato-R";
+  font-weight: 300;
+  margin-top: 35px;
+  line-height: 1.7;
+}
+.layout_3_column {
+  display: flex;
+
+  justify-content: space-between;
+  width: 1039px;
+
+  /* justify-content: space-between; */
+}
+.layout_3_column--top {
+  padding-top: 50px;
+}
+.layout_3_column--bottom {
+  padding-top: 40px;
+}
+
+.service {
+  display: flex;
+  align-items: flex-start;
+
+  width: 350px;
+  /* justify-content: space-between; */
+}
+.service h2 {
+  font-size: 20px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato-R";
+  font-weight: 900;
+}
+.service div {
+  margin-left: 20px;
+}
+.service--description {
+  font-size: 13px;
+  /* line-height: 22px; */
+  font-stretch: expanded;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 600;
+  line-height: 1.7;
+  word-spacing: 3px;
+  letter-spacing: 0.6px;
+  margin-top: 15px;
 }
