@@ -212,7 +212,7 @@ a {
   display: flex;
 
   justify-content: space-between;
-  width: 1039px;
+  width: 1040px;
 
   /* justify-content: space-between; */
 }
@@ -227,7 +227,7 @@ a {
   display: flex;
   align-items: flex-start;
 
-  width: 350px;
+  width: 400px;
   /* justify-content: space-between; */
 }
 .service h2 {
@@ -238,7 +238,7 @@ a {
   font-weight: 900;
 }
 .service div {
-  margin-left: 20px;
+  margin-left: 23px;
 }
 .service--description {
   font-size: 13px;
@@ -251,4 +251,8 @@ a {
   word-spacing: 3px;
   letter-spacing: 0.6px;
   margin-top: 15px;
+  width: 264px;
 }
+/* .block-shadowed--two {
+  padding-left: 100px;
+} */
