@@ -74,11 +74,16 @@
   justify-content: space-between;
   margin-top: 17px;
 }
+.layout_4_column img:hover {
+  cursor: pointer;
+}
 
 .about_us {
   background-color: #f2f2f2;
   margin-top: 7px;
   padding-top: 70px;
+  padding-bottom: 72px;
+  box-shadow: 0 7px 0 0 #ffffff;
 }
 .about_us h3 {
   font-size: 33px;
@@ -104,4 +109,29 @@
 }
 .employee {
   margin-top: 57px;
+}
+h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #666d89;
+  font-family: "Lato-B";
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.employee--description {
+  width: 350px;
+  /* height: 175px; */
+  font-size: 13px;
+  line-height: 23px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+}
+.employee--links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 173px;
+  list-style-type: none;
 }
