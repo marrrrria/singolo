@@ -146,3 +146,29 @@ height: 175px; */
 .ico-email {
   background-image: url("assets/images/ico-email.png");
 }
+
+.footer {
+  background-color: #2d303a;
+  margin-top: 7px;
+  padding-bottom: 20px;
+}
+.wrapper--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.copyright {
+  padding-bottom: 10px;
+  color: #626984;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Lato";
+  font-weight: 400;
+}
+.employee--links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 163px;
+  list-style-type: none;
+}
