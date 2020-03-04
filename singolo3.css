@@ -172,3 +172,6 @@ height: 175px; */
   width: 163px;
   list-style-type: none;
 }
+.employee--links:hover {
+  cursor: pointer;
+}
