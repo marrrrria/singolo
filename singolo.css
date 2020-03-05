@@ -331,21 +331,23 @@ a {
 .about_us {
   background-color: #f2f2f2;
   margin-top: 6px;
-  padding-top: 70px;
-  padding-bottom: 72px;
-  box-shadow: 0 7px 0 0 #ffffff;
+  padding-top: 60px;
+  padding-bottom: 61px;
+  box-shadow: 0 6px 0 0 #ffffff;
 }
 .about_us h3 {
-  font-size: 33px;
+  font-size: 30px;
   line-height: 35px;
   color: #666d89;
   font-family: "Lato-B";
   font-weight: 900;
+  margin-left: 40px;
 }
 .about_us--description {
-  margin-top: 25px;
+  margin-top: 19px;
+  margin-left: 40px;
   height: 57px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
@@ -353,61 +355,68 @@ a {
 }
 .layout_3_column {
   display: flex;
-
-  justify-content: space-between;
+  /* 
+  justify-content: space-between; */
   /* width: 1040px; */
 }
 .employee {
-  margin-top: 57px;
+  margin-top: 47px;
 }
 h4 {
-  margin-top: 15px;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 18px;
   line-height: 25px;
   color: #666d89;
   font-family: "Lato-B";
   font-weight: 900;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .employee--description {
-  width: 350px;
+  width: 300px;
   /* height: 175px; */
-  font-size: 13px;
+  font-size: 12px;
+  /* letter-spacing: 0.6px; */
   line-height: 23px;
   color: #767e9e;
   font-family: "Lato";
-  font-weight: 400;
+  font-weight: 700;
 }
 .employee--links {
-  margin-top: 25px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  width: 173px;
+  width: 155px;
   list-style-type: none;
+}
+.block_shadowed {
+  margin-left: 20px;
 }
 
 .contact_form {
-  margin-top: 7px;
+  margin-top: 6px;
   background-color: #f06c64;
-  box-shadow: 0 7px 0 0 #ea676b;
+  box-shadow: 0 6px 0 0 #ea676b;
 }
 .contact_form--title {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 33px;
   color: #f0d8d9;
   font-family: "Lato-B", Verdana, sans-serif;
   font-weight: 900;
-  padding-top: 70px;
-  margin-bottom: 24px;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  /* letter-spacing: 0.5px; */
 }
 .contact_form--describe {
   height: 60px;
-  font-size: 20px;
-  line-height: 33px;
+  font-size: 18px;
+  line-height: 30px;
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 300;
-  margin-bottom: 55px;
+  margin-bottom: 44px;
+  margin-left: 40px;
 }
 .contact_form--content {
   display: flex;
@@ -415,20 +424,21 @@ h4 {
 .contact_form--form {
   display: flex;
   flex-direction: column;
+  margin-left: 40px;
 }
 .input_text {
   border: none;
   background-color: #d6564f;
   border-radius: 5px;
-  margin-bottom: 18px;
-  height: 42px;
-  width: 685px;
+  margin-bottom: 16px;
+  height: 38px;
+  width: 620px;
   padding-left: 15px;
 }
 .input_text::placeholder {
   /* color: #e87675; */
 
-  font-size: 12px;
+  font-size: 10px;
   line-height: 18px;
   color: #f48c8f;
   font-family: "Lato-B";
@@ -437,7 +447,7 @@ h4 {
 }
 .input_text--textarea {
   resize: none;
-  height: 223px;
+  height: 200px;
   padding-top: 10px;
 }
 .contact_form-submit {
@@ -450,7 +460,7 @@ h4 {
   font-weight: 400;
   letter-spacing: 1px;
   transition: all 0.3s;
-  margin-bottom: 7px;
+  margin-bottom: 3px;
 }
 .contact_form-submit:hover {
   cursor: pointer;
@@ -458,12 +468,12 @@ h4 {
   color: #ffffff;
 }
 .contact_information {
-  margin-left: 24px;
+  margin-left: 20px;
   color: #f0d8d9;
   font-family: "Lato-B";
 }
 h5 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
 
   font-weight: 900;
@@ -472,13 +482,13 @@ h5 {
 .contact_information--describe {
   /* width: 300px;
 height: 175px; */
-  font-size: 13px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 21px;
   font-family: "Lato";
   font-weight: 400;
   letter-spacing: 0.6px;
-  margin-top: 12px;
-  margin-bottom: 22px;
+  margin-top: 9px;
+  margin-bottom: 25px;
 }
 .contact_information--pointer {
   display: flex;
@@ -486,12 +496,12 @@ height: 175px; */
   align-items: flex-end;
 }
 .pointer {
-  font-size: 13px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 20px;
   font-family: "Lato";
   font-weight: 400;
   /* letter-spacing: 0.2px; */
-  margin-left: 10px;
+  margin-left: 8px;
   color: #f0d8d9;
 }
 .ico {
@@ -513,7 +523,7 @@ height: 175px; */
 
 .footer {
   background-color: #2d303a;
-  margin-top: 7px;
+  margin-top: 6px;
   padding-bottom: 20px;
 }
 .wrapper--footer {
