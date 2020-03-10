@@ -388,6 +388,7 @@ h4 {
   margin-top: 6px;
   background-color: #f06c64;
   box-shadow: 0 6px 0 0 #ea676b;
+  position: relative;
 }
 .contact_form--title {
   font-size: 30px;
@@ -530,4 +531,23 @@ h5 {
 }
 .employee--links:hover {
   cursor: pointer;
+}
+
+#message-block {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #0008;
+}
+#message-block.hidden {
+  display: none;
+}
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+  text-align: center;
 }
