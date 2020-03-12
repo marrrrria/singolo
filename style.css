@@ -551,3 +551,15 @@ h5 {
   border: 2px solid black;
   text-align: center;
 }
+
+.hidden {
+  opacity: 0;
+}
+.iphone--turn_of {
+  background-color: black;
+  position: absolute;
+  top: 61px;
+  left: 13px;
+  height: 340px;
+  width: 193px;
+}
