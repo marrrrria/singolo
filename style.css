@@ -563,3 +563,7 @@ h5 {
   height: 340px;
   width: 193px;
 }
+
+.project-selected {
+  border: 5px solid #f06c64;
+}
