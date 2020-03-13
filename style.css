@@ -163,8 +163,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 3px auto;
+  cursor: pointer;
 }
 .button_square {
   border-radius: 5px;
@@ -309,6 +309,9 @@ a {
   width: calc(25vw - 110px);
   height: calc(25vw - 140px);
   margin: 0 8px 8px 0;
+}
+.portfolio--projects img:hover {
+  cursor: pointer;
 }
 .portfolio--projects li:nth-child(1n + 13) {
   display: none;
@@ -559,7 +562,7 @@ h5 {
   background-color: black;
   position: absolute;
   top: 61px;
-  left: 13px;
+  left: 11px;
   height: 340px;
   width: 193px;
 }
