@@ -6,6 +6,54 @@ const TURN_OF_HORIZONTAL_BUTTON = document.getElementById("iphoneH_button");
 const PORTFOLIO = document.getElementById("portfolio_projects");
 const PORTFOLIO_TABS = document.getElementById("portfolio_tabs");
 const portfolioImages = [];
+let sliderItems = document.querySelectorAll(".carousel--item");
+let currentItem = 0;
+let isEnabled = true;
+
+function changeCurrentItem(n) {
+  currentItem = (n + sliderItems.length) % sliderItems.length;
+}
+
+function hideItem(direction) {
+  isEnabled = false;
+  sliderItems[currentItem].classList.add(direction);
+  sliderItems[currentItem].addEventListener("animationend", function() {
+    this.classList.remove("active", direction);
+  });
+}
+
+function showItem(direction) {
+  sliderItems[currentItem].classList.add("next", direction);
+  sliderItems[currentItem].addEventListener("animationend", function() {
+    this.classList.remove("next", direction);
+    this.classList.add("active");
+    isEnabled = true;
+  });
+}
+
+function previousItem(n) {
+  hideItem("to-right");
+  changeCurrentItem(n - 1);
+  showItem("from-left");
+}
+
+function nextItem(n) {
+  hideItem("to-left");
+  changeCurrentItem(n + 1);
+  showItem("from-right");
+}
+
+document.querySelector(".control.left").addEventListener("click", function() {
+  if (isEnabled) {
+    previousItem(currentItem);
+  }
+});
+
+document.querySelector(".control.right").addEventListener("click", function() {
+  if (isEnabled) {
+    nextItem(currentItem);
+  }
+});
 
 PORTFOLIO.querySelectorAll("li").forEach(el => {
   portfolioImages.push(el);
