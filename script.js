@@ -111,18 +111,19 @@ FORM_SUBMIT.addEventListener("click", event => {
   ) {
     const topic = document.getElementById("subject").value.toString();
     if (topic) {
-      document.getElementById("result-subject").innerText = `Тема: ${topic}`;
+      document.getElementById("result-subject").innerText = `Subject: ${topic}`;
     } else {
-      document.getElementById("result-subject").innerText = "Без темы";
+      document.getElementById("result-subject").innerText = "Without subject ";
     }
 
     const describe = document.getElementById("comment").value.toString();
     if (describe) {
       document.getElementById(
         "result-comment"
-      ).innerText = `Описание: ${describe}`;
+      ).innerText = `Description: ${describe}`;
     } else {
-      document.getElementById("result-comment").innerText = "Без описания";
+      document.getElementById("result-comment").innerText =
+        "Without description";
     }
 
     document.getElementById("message-block").classList.remove("hidden");
