@@ -3,6 +3,7 @@ const FORM_SUBMIT = document.getElementById("submit");
 const CLOSE_BUTTON = document.getElementById("close-btn");
 const TURN_OF_VERTICAL_BUTTON = document.getElementById("iphoneV_button");
 const TURN_OF_HORIZONTAL_BUTTON = document.getElementById("iphoneH_button");
+const TURN_OF_SLIDE2 = document.getElementById("circle");
 const PORTFOLIO = document.getElementById("portfolio_projects");
 const PORTFOLIO_TABS = document.getElementById("portfolio_tabs");
 const portfolioImages = [];
@@ -74,6 +75,9 @@ TURN_OF_VERTICAL_BUTTON.addEventListener("click", event => {
 });
 TURN_OF_HORIZONTAL_BUTTON.addEventListener("click", event => {
   document.getElementById("iphoneH_turn_of").classList.toggle("hidden");
+});
+TURN_OF_SLIDE2.addEventListener("click", event => {
+  document.getElementById("iphone_slide2--turn_of").classList.toggle("hidden");
 });
 
 PORTFOLIO_TABS.addEventListener("click", event => {

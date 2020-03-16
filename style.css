@@ -176,6 +176,30 @@ a {
   margin-top: 7px;
 }
 
+.home_2--wrapper {
+  position: relative;
+}
+
+.slide2_turn_of {
+  background-color: black;
+  position: absolute;
+  top: 111px;
+  left: 396px;
+  height: 356px;
+  width: 203px;
+}
+
+.circle {
+  background-color: #a3a3a300;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 475px;
+  bottom: 85px;
+  cursor: pointer;
+}
+
 .iphone {
   background-color: #f2f2f2;
   border-radius: 28px;
@@ -642,7 +666,7 @@ h5 {
   position: absolute;
   padding: 40px;
   top: 50%;
-  left: 50%;
+  left: calc(50% - 150px);
   border: 1px solid rgba(0, 0, 0, 0.63);
   text-align: center;
   font-family: "Lato-B", Verdana, sans-serif;
