@@ -161,4 +161,11 @@ CLOSE_BUTTON.addEventListener("click", event => {
   document.getElementById("result-comment").innerText = "";
   document.getElementById("result-subject").innerText = "";
   document.getElementById("message-block").classList.add("hidden");
+  clearForm();
 });
+
+function clearForm() {
+  document.querySelectorAll("#contact-form .input_text").forEach(item => {
+    item.value = "";
+  });
+}

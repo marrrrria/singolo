@@ -535,6 +535,7 @@ h4 {
   height: 38px;
   width: 620px;
   padding-left: 15px;
+  color: #660a4f;
 }
 .input_text::placeholder {
   font-size: 10px;
