@@ -11,6 +11,35 @@ let sliderItems = document.querySelectorAll(".carousel--item");
 let currentItem = 0;
 let isEnabled = true;
 
+document.addEventListener("scroll", onScroll);
+
+MENU.addEventListener("click", event => {
+  if (event.target.tagName !== "UL" && event.target.tagName !== "LI") {
+    MENU.querySelectorAll("li").forEach(el =>
+      el.classList.remove("item-selected")
+    );
+
+    event.target.parentNode.classList.add("item-selected");
+  }
+});
+
+function onScroll() {
+  const curPos = window.scrollY;
+  const parts = document.querySelectorAll(".one_part");
+
+  parts.forEach(el => {
+    if (el.offsetTop <= curPos && el.offsetTop + el.offsetHeight >= curPos) {
+      MENU.querySelectorAll("a").forEach(link => {
+        link.parentNode.classList.remove("item-selected");
+        console.log(el.getAttribute("id"));
+        if (el.getAttribute("id") === link.getAttribute("href").substring(1)) {
+          link.parentNode.classList.add("item-selected");
+        }
+      });
+    }
+  });
+}
+
 function changeCurrentItem(n) {
   currentItem = (n + sliderItems.length) % sliderItems.length;
 }
@@ -58,16 +87,6 @@ document.querySelector(".control.right").addEventListener("click", function() {
 
 PORTFOLIO.querySelectorAll("li").forEach(el => {
   portfolioImages.push(el);
-});
-
-MENU.addEventListener("click", event => {
-  if (event.target.tagName !== "UL" && event.target.tagName !== "LI") {
-    MENU.querySelectorAll("li").forEach(el =>
-      el.classList.remove("item-selected")
-    );
-
-    event.target.parentNode.classList.add("item-selected");
-  }
 });
 
 TURN_OF_VERTICAL_BUTTON.addEventListener("click", event => {

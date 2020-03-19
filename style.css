@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body,
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   max-width: 1020px;
   margin: 0 auto;
@@ -44,6 +49,10 @@ a {
   background-color: #2d303a;
   padding: 30px 0 29px 0;
   box-shadow: 0px 0px 0px 7px #323746;
+  z-index: 999;
+
+  width: 100%;
+  position: fixed;
 }
 .header--navigation {
   display: flex;
@@ -79,6 +88,7 @@ a {
 
 .carousel {
   position: relative;
+  padding-top: 80px;
 }
 
 .carousel--item {
@@ -674,6 +684,7 @@ h5 {
   box-shadow: 0 5px 7px rgba(0, 1, 6, 0.5), 0 0 3px 3px rgba(0, 1, 6, 0.2);
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+  background-color: #ffffff91;
 }
 
 .hidden {
