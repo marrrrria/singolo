@@ -6,20 +6,33 @@ const TURN_OF_HORIZONTAL_BUTTON = document.getElementById("iphoneH_button");
 const TURN_OF_SLIDE2 = document.getElementById("circle");
 const PORTFOLIO = document.getElementById("portfolio_projects");
 const PORTFOLIO_TABS = document.getElementById("portfolio_tabs");
+const HEADER_NAVIGATION = document.querySelector(".header--navigation");
+const BACKGROUND_BLACK = document.querySelector(".black");
+const HAMBURGER = document.querySelector(".hamburger");
+const HEADER = document.getElementById("header");
+const LOGO = document.querySelector(".logo");
 const portfolioImages = [];
 let sliderItems = document.querySelectorAll(".carousel--item");
 let currentItem = 0;
 let isEnabled = true;
 
-document.addEventListener("scroll", onScroll);
+document.addEventListener("scroll", () => {
+  if (document.documentElement.clientWidth > 768) {
+    onScroll();
+  } else {
+    return;
+  }
+});
 
 MENU.addEventListener("click", event => {
   if (event.target.tagName !== "UL" && event.target.tagName !== "LI") {
-    MENU.querySelectorAll("li").forEach(el =>
-      el.classList.remove("item-selected")
-    );
+    if (document.body.clientWidth > 768) {
+      MENU.querySelectorAll("li").forEach(el =>
+        el.classList.remove("item-selected")
+      );
 
-    event.target.parentNode.classList.add("item-selected");
+      event.target.parentNode.classList.add("item-selected");
+    }
   }
 });
 
@@ -31,7 +44,7 @@ function onScroll() {
     if (el.offsetTop <= curPos && el.offsetTop + el.offsetHeight >= curPos) {
       MENU.querySelectorAll("a").forEach(link => {
         link.parentNode.classList.remove("item-selected");
-        console.log(el.getAttribute("id"));
+
         if (el.getAttribute("id") === link.getAttribute("href").substring(1)) {
           link.parentNode.classList.add("item-selected");
         }
@@ -169,3 +182,11 @@ function clearForm() {
     item.value = "";
   });
 }
+
+HAMBURGER.addEventListener("click", e => {
+  HAMBURGER.classList.toggle("hamburger_rotate");
+  HEADER.classList.toggle("flex_start");
+  LOGO.classList.toggle("margin_logo");
+  HEADER_NAVIGATION.classList.toggle("none");
+  BACKGROUND_BLACK.classList.toggle("none");
+});
